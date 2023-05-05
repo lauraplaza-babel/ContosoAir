@@ -1,19 +1,11 @@
-pool:
-  vmImage: ubuntu-20.04
-trigger:
-  - master
 steps:
-  - script: |
-      sudo apt-get update
-      sudo apt-get install -y nodejs
-
   - task: Npm@1
     inputs:
       command: 'custom'
-      customcommand: 'install --production'
+      customCommand: 'install --production'
   - script: |
-      npm i
-      npm run serve --fix
+      npm install --legacy-peer-deps
+      npm install jest --save-dev
       npm test
     displayName: 'Run unit tests'
     continueOnError: true
