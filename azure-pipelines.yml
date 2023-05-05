@@ -12,7 +12,7 @@ steps:
       command: 'custom'
       customcommand: 'install --production'
   - script: |
-      npm install -g jest
+      npm i
       npm run serve --fix
       npm test
     displayName: 'Run unit tests'
