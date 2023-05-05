@@ -13,6 +13,7 @@ steps:
       customcommand: 'install --production'
   - script: |
       npm install -g jest
+      npm install jest-junit-reporter --save-dev
       npm test
     displayName: 'Run unit tests'
     continueOnError: true
