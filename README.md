@@ -1,5 +1,6 @@
 # This project is retired, archived, and no longer supported. You are welcome to continue to use and fork the repository.
 
+[![Build Status](https://dev.azure.com/Tailspin0523388/Parts%20Unlimited%203/_apis/build/status%2Flauraplaza-babel.ContosoAir?branchName=master)](https://dev.azure.com/Tailspin0523388/Parts%20Unlimited%203/_build/latest?definitionId=25&branchName=master)
 
 # Microsoft.Github CI Demo
 
