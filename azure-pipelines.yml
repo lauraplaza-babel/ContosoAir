@@ -3,6 +3,10 @@ pool:
 trigger:
   - master
 steps:
+  - script: |
+      sudo apt-get update
+      sudo apt-get install -y nodejs
+
   - task: Npm@1
     inputs:
       command: 'custom'
